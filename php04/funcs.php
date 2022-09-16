@@ -21,10 +21,10 @@ function loginCheck()
 function db_conn()
 {
     try {
-        $db_name = 'gs_db4';    //データベース名
-        $db_id   = 'root';      //アカウント名
-        $db_pw   = 'root';      //パスワード：XAMPPはパスワード無しに修正してください。
-        $db_host = 'localhost'; //DBホスト
+        $db_name = 'tetsupanda_happy';    //データベース名
+        $db_id   = 'tetsupanda';      //アカウント名
+        $db_pw   = 'Fireball5051';      //パスワード：XAMPPはパスワード無しに修正してください。
+        $db_host = 'mysql627.db.sakura.ne.jp'; //DBホスト
         $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
         return $pdo;
     } catch (PDOException $e) {
